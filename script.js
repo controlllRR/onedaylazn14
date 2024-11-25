@@ -1,6 +1,13 @@
 // Получаем ссылку на аудио элемент
 const tickSound = document.getElementById('tickSound');
 
+// Находим текущий URL
+let currentUrl = window.location.href;
+// Заменяем текст в URL
+let newUrl = currentUrl.replace('ОСТАЛОСЬ ДО', 'ДЕНЬ, КОТОРЫЙ ИЗМЕНИТ ВСЕ');
+// Обновляем URL без перезагрузки страницы
+window.history.pushState({}, '', newUrl);
+
 function updateTimer() {
     const endDate = new Date('2024-12-06T00:00:00');
     const now = new Date();

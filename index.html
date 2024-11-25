@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОСТАЛОСЬ ДО</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ОСТАЛОСЬ ДО</h1>
+        <h2>ДНЯ КОТОРЫЙ ИЗМЕНИТ ВСЕ</h2>
+        
+        <div class="timer">
+            <div class="timer-item">
+                <span id="days">00</span>
+                <span class="label">дней</span>
+            </div>
+            <div class="timer-item">
+                <span id="hours">00</span>
+                <span class="label">часов</span>
+            </div>
+            <div class="timer-item">
+                <span id="minutes">00</span>
+                <span class="label">минут</span>
+            </div>
+            <div class="timer-item">
+                <span id="seconds">00</span>
+                <span class="label">секунд</span>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="background.jpg" alt="Фоновое изображение">
+        </div>
+
+        <a href="https://band.link/LAZN14_ONEDAY" class="button">
+            узнать что за день?
+        </a>
+    </div>
+    
+    <audio id="tickSound" preload="auto">
+        <source src="tick.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html> 
